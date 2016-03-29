@@ -19,7 +19,6 @@ public class LoginScreen extends Activity {
                 Intent intent = new Intent(LoginScreen.this,RegisterScreen.class);
                 startActivity(intent);
 
-                //blablalbalbalbaltest
             }
         });
     }
