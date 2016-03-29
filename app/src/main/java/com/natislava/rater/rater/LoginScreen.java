@@ -18,7 +18,6 @@ public class LoginScreen extends Activity {
             public void onClick(View v) {
                 Intent intent = new Intent(LoginScreen.this,RegisterScreen.class);
                 startActivity(intent);
-                //test update
             }
         });
     }
