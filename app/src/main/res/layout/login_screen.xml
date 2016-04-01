@@ -18,6 +18,7 @@
         android:id="@+id/login_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:text="@string/login_text"
         android:layout_below="@id/logo_login"
         android:layout_centerHorizontal="true"/>
