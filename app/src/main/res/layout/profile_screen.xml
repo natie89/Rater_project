@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_marginTop="4dp"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/logo_profilepage"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:src="@drawable/square"
+        />
+
+    <ImageView
+        android:id="@+id/user_photo"
+        android:layout_below="@id/logo_profilepage"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:background="@color/colorAccent"
+        android:layout_marginTop="32dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/username_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_photo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="USERNAME"/>
+
+    <LinearLayout
+        android:id="@+id/fname_lname_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/username_TV"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp">
+        <TextView
+            android:id="@+id/firstname_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/customTextViewRegularText"
+            android:text="FNAME"/>
+        <Space
+            android:layout_width="24dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/lastname_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/customTextViewRegularText"
+            android:text="LNAME"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/user_email_TV"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="email@email.com"
+        android:layout_below="@id/fname_lname_ll"
+        style="@style/customTextViewRegularText"/>
+        <TextView
+            android:id="@+id/user_age_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20"
+            style="@style/customTextViewRegularText"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/user_email_TV"/>
+    <View
+        android:id="@+id/profilescreen_divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/user_age_TV"
+        android:layout_marginTop="12dp"
+        android:background="@color/DIVIDERColorCustom"/>
+    <ListView
+        android:layout_below="@id/profilescreen_divider"
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+
+</RelativeLayout>
